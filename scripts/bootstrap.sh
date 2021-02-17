@@ -4,5 +4,6 @@
 
 systemctl start mysql.service
 /vagrant/scripts/start-hadoop.sh	# Starts the namenode/datanode plus yarn.
+/vagrant/scripts/start-hbase.sh
 /vagrant/scripts/start-hive.sh		# Start hiveserver2 plus metastore service.
 /vagrant/scripts/start-spark.sh		# Start Spark history server.

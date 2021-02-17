@@ -1,0 +1,2 @@
+hdfs dfs -mkdir -p /user/vagrant/data
+hdfs dfs -copyFromLocal /vagrant/files/cars_nohead.csv /user/vagrant/data

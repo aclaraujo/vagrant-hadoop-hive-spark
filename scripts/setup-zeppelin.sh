@@ -1,5 +1,3 @@
-#!/bin/bash
-
 source "/vagrant/scripts/common.sh"
 
 function installLocalZeppelin {

@@ -30,6 +30,25 @@ HIVE_CONF=/usr/local/hive/conf
 HIVE_PREFIX=/usr/local/hive
 HIVE_EXEC_JAR=${HIVE_PREFIX}/lib/hive-exec-${HIVE_VERSION}.jar
 
+# HBase
+HBASE_VERSION=1.4.8
+HBASE_MAJOR_VERSION=1.4
+HBASE_ARCHIVE=hbase-${HBASE_VERSION}-bin.tar.gz
+HBASE_MIRROR_DOWNLOAD=http://archive.apache.org/dist/hbase/${HBASE_VERSION}/$HBASE_ARCHIVE
+HBASE_RES_DIR=/vagrant/resources/hbase
+HBASE_CONF=/usr/local/hbase/conf
+HBASE_PREFIX=/usr/local/hbase
+#HIVE_EXEC_JAR=${HIVE_PREFIX}/lib/hive-exec-${HIVE_VERSION}.jar
+
+
+# Phoenix
+PHOENIX_VERSION=4.14.0-HBase-${HBASE_MAJOR_VERSION}
+PHOENIX_BASE_NAME=apache-phoenix-${PHOENIX_VERSION}
+PHOENIX_ARCHIVE=${PHOENIX_BASE_NAME}-bin.tar.gz
+PHOENIX_MIRROR_DOWNLOAD=http://www.mirrorservice.org/sites/ftp.apache.org/phoenix/${PHOENIX_BASE_NAME}/bin/${PHOENIX_ARCHIVE}
+PHOENIX_RES_DIR=/vagrant/resources/phoenix
+PHOENIX_SERVER_JAR=/usr/local/phoenix/phoenix-${PHOENIX_VERSION}-server.jar
+
 # spark
 SPARK_VERSION=spark-2.3.0
 SPARK_ARCHIVE=$SPARK_VERSION-bin-hadoop2.tgz
@@ -81,7 +100,7 @@ FLUME_MIRROR_DOWNLOAD=http://www.mirrorservice.org/sites/ftp.apache.org/flume/${
 FLUME_RES_DIR=/vagrant/resources/flume
 
 # Zeppelin 
-ZEPPELIN_VERSION=0.8.0
+ZEPPELIN_VERSION=0.9.0
 ZEPPELIN_RELEASE=zeppelin-${ZEPPELIN_VERSION}-bin-netinst
 ZEPPELIN_ARCHIVE=${ZEPPELIN_RELEASE}.tgz
 ZEPPELIN_MIRROR_DOWNLOAD=http://www-eu.apache.org/dist/zeppelin/zeppelin-${ZEPPELIN_VERSION}/${ZEPPELIN_ARCHIVE}
